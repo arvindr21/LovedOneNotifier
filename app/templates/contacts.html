@@ -1,0 +1,19 @@
+<ion-view hide-back-button="false" title="Loved One Notifier">
+    <ion-content padding="true">
+        <div class="list">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" ng-model="searchC" placeholder="Search Contacts...">
+            </label>
+            <ul class="list">
+                <li class="item item-checkbox" ng-repeat="c in contacts | orderBy: 'displayName' | filter:searchC">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="c.isChecked" ng-checked="c.isChecked" ng-change="handleContact(c)">
+                    </label>
+                    <h2>{{c.displayName}}</h2>
+                    <p>{{c.phoneNumbers[0].value}}</p>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

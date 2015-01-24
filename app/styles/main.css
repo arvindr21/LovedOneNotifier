@@ -1,0 +1,72 @@
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+.slider {
+    height: 100%;
+}
+.slider-slide {
+    padding-top: 80px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+#logo {
+    margin: 30px 0px;
+}
+#list {
+    width: 170px;
+    margin: 30px auto;
+    font-size: 20px;
+}
+#list ol {
+    margin-top: 30px;
+}
+#list ol li {
+    text-align: left;
+    list-style: decimal;
+    margin: 10px 0px;
+}
+#logo > img {
+    width: 36%;
+}
+.slider-pager-page.active .ion-record {
+    color: #F14A22;
+}
+p, .ft-17 {
+    font-size: 17px !important;
+}
+
+.item p{
+  white-space: normal;
+}
+
+.item h2{
+  color: #F14A22;
+}
+
+.foot{
+  font-style: italic;
+text-decoration: underline;
+}
+
+.center-footer {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.splash h1.text-center{
+  padding-top: 20%;
+}
+
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+  background: #e42012;
+  border-color: #e42012;
+}
+
+.splash .loader{
+  margin: 0px auto;
+display: block;
+}

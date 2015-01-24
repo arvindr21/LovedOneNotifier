@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<widget id="com.labs.stack.lon.app" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>LON</name>
+    <description>
+        Automatically notify your loved ones that your battery is about to die.
+    </description>
+    <author email="lon-support@labs.jackalstack.com" href="http://labs.jackalstack.com/">
+        Stack Labs
+    </author>
+    <icon src="www/images/app_icon.png" />
+
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+  
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+
+    <cdv:plugin name="de.appplant.cordova.plugin.local-notification" />
+    <cdv:plugin name="org.apache.cordova.battery-status" />
+    <cdv:plugin name="org.apache.cordova.contacts" />
+    <cdv:plugin name="org.apache.cordova.plugin.sms" />
+
+
+
+</widget>

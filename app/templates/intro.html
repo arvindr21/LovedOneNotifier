@@ -1,0 +1,67 @@
+<ion-view hide-back-button="true" title="">
+    <ion-nav-buttons side="left">
+        <button class="button button-dark no-animation" ng-click="startApp()" ng-if="!slideIndex">
+            Skip Intro
+        </button>
+        <button class="button button-dark no-animation" ng-click="previous()" ng-if="slideIndex > 0">
+            Previous
+        </button>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <button class="button button-dark no-animation" ng-click="next()" ng-if="slideIndex != 2">
+            Next
+        </button>
+    </ion-nav-buttons>
+
+    <ion-slide-box on-slide-changed="slideChanged(index)">
+        <ion-slide>
+            <h3>Thank you for downloading Loved One Notifier!</h3>
+            <div id="logo">
+                <img src="images/app_icon.png">
+            </div>
+            <p class="padding">
+                Did you ever want an App that would send an SMS when you'r battery is about to die?
+            </p>
+            <p>
+                Look no far and follow this wizard..
+            </p>
+        </ion-slide>
+
+        <ion-slide>
+            <h3>Using Loved One Notifier</h3>
+            <div class="list card">
+                <div class="item text-left">
+                    <h2>Step 1</h2>
+                    <p class="ft-17">Select a threshold at which an SMS should be sent</p>
+
+                </div>
+
+                <div class="item text-left">
+                    <h2>Step 2</h2>
+                    <p class="ft-17">Select a message that will be sent along with the SMS</p>
+
+                </div>
+                <div class="item text-left">
+                    <h2>Step 3</h2>
+                    <p class="ft-17">Select contacts who recieve this SMS</p>
+                </div>
+            </div>
+            <h3>Isin't Pretty Simple?</h3>
+        </ion-slide>
+
+        <ion-slide>
+            <div id="logo">
+                <img src="images/app_icon.png">
+            </div>
+            <p class="padding foot">With Love from Stack Labs</p>
+            <br/>
+            <br/>
+            <button class="button button-assertive no-animation" ng-click="startApp()" ng-if="slideIndex == 2">
+                Start using Loved One Notifier
+            </button>
+
+        </ion-slide>
+    </ion-slide-box>
+
+</ion-view>
