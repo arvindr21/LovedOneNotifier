@@ -53,6 +53,7 @@
     "de.appplant.cordova.plugin.local-notification",
     "org.apache.cordova.battery-status",
     "org.apache.cordova.contacts",
-    "https://github.com/aharris88/phonegap-sms-plugin.git"
+    "https://github.com/aharris88/phonegap-sms-plugin.git",
+    "https://github.com/phpsa/cbsp.git"
   ]
 }

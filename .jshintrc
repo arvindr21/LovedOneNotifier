@@ -23,6 +23,7 @@
     "cordova": false,
     "StatusBar": false,
     "sms": false,
-    "ContactFindOptions" : false
+    "ContactFindOptions" : false,
+    "alert" : false
   }
 }
